@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <div class="card__img--container">
+        <div class="card__back--container">
+          <img src="images/bg-card-back.png" alt="" class="card__back--img" />
+          <p class="card__back--cvc" id="cvc">000</p>
+        </div>
+        <div class="card__front--container">
+          <img src="images/bg-card-front.png" alt="" class="card__front--img" />
+          <img src="images/card-logo.svg" alt="" card__front--logo />
+          <p card__front--num>0000 0000 0000 0000</p>
+          <div class="card__front--name_date--container">
+            <p>Jane Applessed</p>
+            <p>00/00</p>
+          </div>
+        </div>
+      </div>
+      <form action="get">
+        <label for="form__name">CARDHOLDER NAME</label>
+        <input type="text" class="form__input" id="form__name" />
+        <label for="form__card_number">CARD NUMBER</label>
+        <input type="text" class="form__input" id="form__card_number" />
+        <label for="form__month">EXP.DATE (MM/YY)</label>
+        <input type="text" class="form__input" id="form__month" />
+        <input type="text" class="form__input" id="form__year" />
+        <label for="form__cvc">CVC</label>
+        <input type="text" class="form__input" id="form__cvc" />
+        <button type="submit">Confirm</button>
+      </form>
+    </main>
+
+    <!-- Cardholder Name e.g. Jane
+    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+    e.g. 123  -->
+
+    <!-- Completed state start -->
+
+    <!-- Thank you! We've added your card details Continue -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
