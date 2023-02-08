@@ -22,3 +22,195 @@
 html {
     font-family: 'Space Grotesk', sans-serif;
 }
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    max-width: 100vw;
+    font-weight: 500;
+
+}
+.card__img--container {
+    background-image: url(./images/bg-main-mobile.png);
+    position: relative;
+    height: 24rem;
+    padding: 3.2rem 1.6rem 0;
+}
+
+.card__back--img, .card__front--img {
+    width: 28.6rem;
+}
+
+.card__back--img {
+    position: absolute;
+    top: 3.2rem ;
+    right: 1.6rem;
+}
+
+#cvc {
+    position: absolute;
+    color: var(--White);
+    right: 5.3rem;
+    top: 10.5rem;
+}
+
+
+
+.card__front--container {
+    margin-top: 9.4rem;
+    /* padding: 1.76rem 2.1rem 1.96rem 1.9rem ; */
+    position: relative;
+    display: flex;
+    width: 28.5rem;
+    height: 15.6rem;
+    flex-direction: column;
+
+}
+
+.card__front--logo {
+    position: absolute;
+    top: 1.76rem;
+    left: 1.9rem;
+    width: 5.4rem;
+    height: 3rem;
+}
+
+.card__front--num {
+    position: absolute;
+    top: 8.46rem;
+    left: 1.9rem ;
+    color: var(--White);
+    font-size: 1.8rem;
+    letter-spacing: .22rem;
+}
+
+.card__front--name_date--container {
+    position: absolute;
+    color: var(--White);
+    display: inline-flex;
+    width: 28.5rem;
+    padding-left: 1.9rem;
+    padding-right: 2.1rem;
+    justify-content: space-between;
+    bottom: 2.06rem;
+    font-size: .9rem;
+    letter-spacing: .13rem;
+  
+    
+
+}
+
+
+.form__container {
+    margin-top: 9.1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin: 9.1rem 2.4rem 4.5rem;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+input {
+    height: 4.5rem;
+    border-radius: .8rem;
+    border: 1px solid #DFDEE0;
+    padding-left: 1.6rem;
+    
+}
+
+input::placeholder {
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    color: #21092F;
+    opacity: 30%;
+    margin-left: 5rem;
+}
+
+#form__group--number {
+    position: relative;
+}
+
+#form__group--number::after {
+    content: "Wrong format, numbers only";
+    color: var(--Red);
+    position: absolute; 
+    bottom: -1.2rem;
+    font-size: 1rem;
+}
+
+.form__exp_date_cvc--container {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    gap: .8rem;
+    position: relative;
+
+}
+
+fieldset::after {
+    content: "Must be valid month & year";
+    color: var(--Red);
+    position: absolute;
+    bottom: -2.2rem;
+    font-size: 1rem;
+}
+
+#form__month, #form__year {
+    width: 7.2rem;
+    margin-top: .9rem;
+
+}
+
+#form__year--label, #form__month--label {
+    display: none;
+   
+}
+
+#form__cvc {
+    width: 16.4rem ;
+}
+
+#form__group--cvc {
+    position: relative;
+}
+
+#form__group--cvc::after {
+    content: "Can't be blank";
+    color: var(--Red);
+    position: absolute;
+    bottom: -1.2rem;
+    font-size: 1rem;
+}
+
+
+button {
+    margin-top: .8rem;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    height: 5.3rem;
+    border-radius: 8px;
+    font-size: 1.8rem;
+   
+}
+
+.error {
+    display: none;
+}
