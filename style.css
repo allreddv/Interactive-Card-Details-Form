@@ -297,7 +297,7 @@ main {
 .card__front--absolute {
     position: absolute;
     top: 18.7rem;
-    left: 15.5rem;
+    left: 15rem;
 }
 
 .card__front--container {
