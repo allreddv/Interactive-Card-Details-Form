@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -17,22 +16,30 @@
           <img src="images/bg-card-back.png" alt="" class="card__back--img" />
           <p class="card__back--cvc" id="cvc">000</p>
         </div>
-        <div class="card__front--container">
-          <img src="images/bg-card-front.png" alt="" class="card__front--img" />
-          <img src="images/card-logo.svg" alt="" class="card__front--logo" />
-          <p class="card__front--num" id="card__front--num">
-            0000 0000 0000 0000
-          </p>
-          <div class="card__front--name_date--container">
-            <p id="card__front--name">Jane Applessed</p>
-            <p>
-              <span id="card__month"> 00</span>/<span id="card__year">00</span>
+        <div class="card__front--absolute">
+          <div class="card__front--container">
+            <img
+              src="images/bg-card-front.png"
+              alt=""
+              class="card__front--img"
+            />
+            <img src="images/card-logo.svg" alt="" class="card__front--logo" />
+            <p class="card__front--num" id="card__front--num">
+              0000 0000 0000 0000
             </p>
+            <div class="card__front--name_date--container">
+              <p id="card__front--name">Jane Applessed</p>
+              <p>
+                <span id="card__month"> 00</span>/<span id="card__year"
+                  >00</span
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="form__container">
-        <form action="">
+      <div class="form__container" id="form__container">
+        <form action="" id="form">
           <div class="form__group">
             <label for="form__name">CARDHOLDER NAME</label>
             <input
@@ -43,6 +50,7 @@
               oninput="nameJS()"
               autocomplete="off"
             />
+            <p class="error__msg hidden" id="error__name">Can't be blank</p>
           </div>
           <div class="form__group" id="form__group--number">
             <label for="form__card_number">CARD NUMBER</label>
@@ -55,36 +63,42 @@
               oninput="numJS()"
               autocomplete="off"
             />
+            <p class="error__msg hidden" id="error__number">
+              Wrong format, numbers only
+            </p>
           </div>
           <div class="form__exp_date_cvc--container">
             <fieldset>
               <legend>EXP. DATE (MM/YY)</legend>
-              <div class="form__group">
-                <label for="form__month" id="form__month--label"
-                  >EXP.DATE (MM/YY)</label
-                >
-                <input
-                  type="text"
-                  class="form__input"
-                  id="form__month"
-                  placeholder="MM"
-                  oninput="monthJS ()"
-                  autocomplete="off"
-                  maxlength="2"
-                />
+              <div id="form__group--date">
+                <div class="form__group">
+                  <label for="form__month" id="form__month--label"
+                    >EXP.DATE (MM/YY)</label
+                  >
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="form__month"
+                    placeholder="MM"
+                    oninput="monthJS ()"
+                    autocomplete="off"
+                    maxlength="2"
+                  />
+                </div>
+                <div class="form__group">
+                  <label for="form__year" id="form__year--label">Year</label>
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="form__year"
+                    placeholder="YY"
+                    oninput="yearJS()"
+                    maxlength="2"
+                    autocomplete="off"
+                  />
+                </div>
               </div>
-              <div class="form__group">
-                <label for="form__year" id="form__year--label">Year</label>
-                <input
-                  type="text"
-                  class="form__input"
-                  id="form__year"
-                  placeholder="YY"
-                  oninput="yearJS()"
-                  maxlength="2"
-                  autocomplete="off"
-                />
-              </div>
+              <p class="error__msg hidden" id="error__date">Can't be blank</p>
             </fieldset>
             <div class="form__group" id="form__group--cvc">
               <label for="form__cvc">CVC</label>
@@ -97,10 +111,17 @@
                 maxlength="3"
                 autocomplete="off"
               />
+              <p class="error__msg hidden" id="error__cvc">Can't be blank</p>
             </div>
           </div>
-          <button type="submit">Confirm</button>
+          <button type="submit" id="submit__btn">Confirm</button>
         </form>
+      </div>
+      <div class="thankyou__container hidden" id="thankyou__container">
+        <img src="images/icon-complete.svg" alt="" class="thankyou__img" />
+        <h2 class="thankyou__title">THANK YOU!</h2>
+        <p class="thankyou__text">We've added your card details</p>
+        <button class="continue__btn" id="continue">Continue</button>
       </div>
     </main>
 
