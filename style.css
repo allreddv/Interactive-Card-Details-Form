@@ -293,7 +293,7 @@ main {
 .card__front--absolute {
     position: absolute;
     top: 18.7rem;
-    left: 18rem;
+    left: 17rem;
 }
 
 .card__front--container {
@@ -371,7 +371,7 @@ form {
 }
 
 button {
-    margin-top: 1.4rem;
+    margin-top: 1.6rem;
 }
 
 .thankyou__container {

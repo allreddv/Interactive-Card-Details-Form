@@ -182,4 +182,4 @@ for (let input of arrayInputs) {
 
 const continueBtn = document.getElementById('continue')
 
-continueBtn.addEventListener('click', (e) => form.submit())
+continueBtn.addEventListener('click', (e) => location.reload())
