@@ -115,7 +115,8 @@ main {
     justify-content: space-between;
     bottom: 2.06rem;
     font-size: .9rem;
-    letter-spacing: .13rem;  
+    letter-spacing: .13rem; 
+    text-transform: capitalize; 
 }
 
 
@@ -280,7 +281,7 @@ main {
     width: 44.7rem;
     height: 24.5rem;
     top: 43.7rem ;
-    left: 24.2rem;
+    left: 25.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 120px -12px, rgba(0, 0, 0, 0.3) 0px 18px 120px -18px;
 }
 
@@ -292,7 +293,7 @@ main {
 .card__front--absolute {
     position: absolute;
     top: 18.7rem;
-    left: 16.4rem;
+    left: 18rem;
 }
 
 .card__front--container {
@@ -346,12 +347,16 @@ main {
     position: absolute;
     color: var(--White);
     right: 5.3rem;
-    top: 11rem;
+    top: 11.5rem;
     font-size: 1.4rem ;
 }
 
+form {
+    gap: 2.6rem;
+}
+
 .form__container {
-    margin-left: 34.9rem;
+    margin-left: 36rem;
     margin-top: 27.5rem ;
     width: 38.1rem;
 }
@@ -363,6 +368,10 @@ main {
 
 #form__cvc {
     width: 19.1rem ;
+}
+
+button {
+    margin-top: 1.4rem;
 }
 
 .thankyou__container {

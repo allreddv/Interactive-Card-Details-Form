@@ -25,7 +25,7 @@ const errorDate = document.getElementById("error__date")
 // Update in realtime the form inputs into the card image
 
 const nameJS = () => {
-    cardName.innerText = formName.value
+    cardName.innerText = formName.value.toUpperCase()
 }
 
 const cvcJS = () => {
