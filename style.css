@@ -116,7 +116,11 @@ main {
     bottom: 2.06rem;
     font-size: .9rem;
     letter-spacing: .13rem; 
-    text-transform: capitalize; 
+ 
+}
+
+#card__front--name {
+    font-size: .8rem;
 }
 
 
@@ -293,7 +297,7 @@ main {
 .card__front--absolute {
     position: absolute;
     top: 18.7rem;
-    left: 16.4rem;
+    left: 15.5rem;
 }
 
 .card__front--container {
@@ -339,8 +343,12 @@ main {
     padding-right: 3.2rem;
     justify-content: space-between;
     top: 20rem;
-    font-size: 1.4rem;
+    font-size: 14px;
     letter-spacing: .2rem;  
+}
+
+#card__front--name {
+    font-size: 1.4rem;
 }
 
 #cvc {

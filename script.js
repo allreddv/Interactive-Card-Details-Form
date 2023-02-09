@@ -28,20 +28,20 @@ const nameJS = () => {
     cardName.innerText = formName.value.toUpperCase()
 }
 
-const cvcJS = () => {
+function cvcJS() {
     let inputValue = formCvc.value
-     // Check if the input value contains any letters 
-    if (/[a-zA-Z]/.test(inputValue) ) {
+    // Check if the input value contains any letters 
+    if (/[a-zA-Z]/.test(inputValue)) {
         // Show error message
-        errorCvc.innerText = 'Only Numbers';
-        errorCvc.classList.remove('hidden');
+        errorCvc.innerText = 'Only Numbers'
+        errorCvc.classList.remove('hidden')
     }
-    if (!/[a-zA-Z]/.test(inputValue) ) {
+    if (!/[a-zA-Z]/.test(inputValue)) {
         // remove error message and reset
-        errorCvc.innerText = "Can't be blank";
-        errorCvc.classList.add('hidden');
+        errorCvc.innerText = "Can't be blank"
+        errorCvc.classList.add('hidden')
     }
-    
+
     cardCvc.innerText = formCvc.value
 }
 
