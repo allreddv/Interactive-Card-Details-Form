@@ -258,7 +258,7 @@ button {
 /* ------------------------------------------------------------------------------------
                     Desktop
 ------------------------------------------------------------------------------------ */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1040px) {
     
 
 main {
@@ -282,7 +282,7 @@ main {
     height: 24.5rem;
     top: 43.7rem ;
     left: 25.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 120px -12px, rgba(0, 0, 0, 0.3) 0px 18px 120px -18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 60px -18px;
 }
 
 .card__back--img {
@@ -293,7 +293,7 @@ main {
 .card__front--absolute {
     position: absolute;
     top: 18.7rem;
-    left: 17rem;
+    left: 16.4rem;
 }
 
 .card__front--container {
@@ -306,7 +306,7 @@ main {
     top: 0;
     right: 0;
 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 120px -12px, rgba(0, 0, 0, 0.3) 0px 18px 120px -18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 60px -18px;
 
 }
 
@@ -371,7 +371,7 @@ form {
 }
 
 button {
-    margin-top: 1.6rem;
+    margin-top: 1.8rem;
 }
 
 .thankyou__container {
