@@ -80,12 +80,14 @@ const numJS = () => {
     let inputValue = formCardNum.value;
     if (/[a-zA-Z]/.test(inputValue)) {
     formCardNum.style.border = '2px solid red'
+    errorNum.innerText = "Wrong format, numbers only"
     errorNum.classList.remove('hidden')
     return;
     }
     if (!/[a-zA-Z]/.test(inputValue)) {
         formCardNum.style.border = '1px solid #DFDEE0'
         errorNum.classList.add('hidden')
+        errorNum.innerText = "Can't be blank"
     }
     // format numbers into four digit blocks i.e. 1111 1111 1111 1111
     let formattedValue = inputValue
